@@ -61,7 +61,7 @@ Visit: **[http://localhost:3000](http://localhost:3000)**
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/cookbook.com.git
+   git clone https://github.com/YaasirBinMuneer/cookbook.com.git
    cd cookbook.com
    ```
 
