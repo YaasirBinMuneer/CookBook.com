@@ -16,7 +16,7 @@ It features **secure authentication, interactive UI, dynamic filtering, and real
 **1. Clone** → **2. Install Dependencies** → **3. Run Server**
 
 ```bash
-git clone https://github.com/yourusername/cookbook.com.git
+git clone https://github.com/YaasirBinMuneer/cookbook.com.git
 cd cookbook.com
 npm install
 node Project_server.js
