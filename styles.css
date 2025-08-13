@@ -1,0 +1,557 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Century Gothic, Verdana, arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    height: 75px;
+    width: 100%;
+    color: white;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.13);
+}
+
+nav ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+    font-weight: 550px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 17px;
+}
+
+a:hover{
+    color: #79d80c;
+    background-color: #58585800;
+}
+
+.logo{
+    margin-left: 20px;
+    font-size: 24px;
+    width: 240px;
+}
+
+.user-profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+/* login and sign up */
+
+.formContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+form{
+    text-align: center;
+    color: black;
+    font-weight: lighter;
+    font-size: large;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#logInHeading{
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+#formBackground{
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 35px;
+    padding: 20px;
+    padding-top: 45px;
+    margin-bottom: -20px;
+    font-weight: bolder;
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.13);
+}
+
+#primary-button{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50px;
+    background-color: #79d80c;
+    color: white;
+    border: 1px solid #79d80c;
+    font-weight: bold;
+    font-size: large;
+    width: 250px;
+    cursor: pointer;
+}
+
+#primary-button:hover{
+    background-color: #5da20f;
+    color: white;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+}
+
+#login-button {
+    cursor: pointer;
+    padding: 7px 10px 7px 10px;
+    margin: 20px;
+    border: 1px solid #79d80c;
+    border-radius: 50px;
+    background-color: #79d80c;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    width: 120px;
+}
+
+#login-button:hover{
+    background-color: #5da20f;
+    color: white;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+}
+
+#signup-button {
+    cursor: pointer;
+    padding: 8px 20px 10px 20px;
+    margin: 20px;
+    border: 1px solid #79d80c;
+    border-radius: 50px;
+    background-color: #79d80c;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    width: 200px;
+}
+
+#signup-button:hover{
+    background-color: #5da20f;
+    color: white;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+}
+
+#secondary-button{
+    cursor: pointer;
+    padding: 8px 20px 10px 20px; /* top right bottom left */
+    margin: 40px;
+    border-radius: 50px;
+    border: 1.5px solid #79d80c;
+    background-color: white;
+    color: #79d80c;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    width: 200px;
+}
+
+#secondary-button:hover{
+    background-color: #79d80c;
+    color: white;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+}
+
+input{
+    border-radius: 50px;
+    padding: 5px;
+    background-color: white;
+    margin: 5px;
+    margin-left: 10px;
+    border:1px solid #b0b0b0;
+}
+
+#signUpOption {
+    text-decoration: none;
+    margin-top: -40px;
+}
+
+button:hover{
+    background-color: white;
+    color: #79d80c;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s; 
+}
+
+/* Main Styles */
+main {
+    padding: 0px;
+}
+
+.hero-section {
+    padding-top: 30px;
+    padding-bottom: 130px;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-title-container {
+    background-color: white;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.13);
+}
+
+.big-title {
+    color: black;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.user-profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 80px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.profile-name {
+    font-size: 20px;
+    margin-bottom: 60px;
+    font-weight: normal;
+}
+
+.recipe-management {
+    background-color: white;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+
+.add-recipe-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.add-recipe-container {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.add-recipe {
+    background-color: #79d80c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 35px;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+.add-recipe-heading {
+    font-size: 35px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.recipe-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.recipe-list li {
+    font-weight: bold;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px; /* Adds some margin between each recipe card */
+}
+
+
+.recipe-list li h3 {
+    font-weight: normal;
+    margin: 0 0 10px;
+}
+
+.recipe-picture {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px; /* Add some space between buttons */
+    margin-top: 10px;
+}
+
+.edit-recipe, .delete-recipe {
+    background-color: #da9019;
+    color: white;
+    border: none;
+    padding: 6px 11px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+
+/* Popup styles */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-dropdown {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.popup-button {
+    background-color: #da9019;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.delete-recipe {
+    background-color: #f44336;
+}
+
+/* Ensure equal width for both buttons */
+.edit-recipe, .delete-recipe {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 70px; /* Adjust the minimum width as needed */
+}
+
+.recipe-search {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.search-input {
+    width: 60%;
+    padding: 10px;
+}
+
+.edit-cuisine {
+    width: 40%;
+    padding: 10px;
+}
+.search-button {
+    background-color: #da9019;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.recipe-results {
+    margin-top: 10px;
+}
+
+select {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.recipe-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .recipe-card .recipe-name-text {
+    font-size: large;
+    font-weight: bolder;
+  }
+
+  .recipe-card .recipe-cusine-text {
+    font-weight: lighter;
+  }
+  
+  .recipe-card .recipe-details {
+    margin-top: 10px;
+  }
+  
+  .recipe-card .button-container {
+    display: flex;
+    justify-content: center; /* Align buttons to the center */
+    margin-top: 1px; /* Top margin for the button container */
+  }
+  
+  .recipe-card .button-container button {
+    margin: 5px; /* Margin between buttons */
+  }
+  
+  
+  .edit-recipe {
+    background-color: #da9019;
+    color: white;
+    border: none;
+  }
+  
+  .delete-recipe {
+    background-color: #f44336;
+    color: white;
+    border: none;
+  }
+  
+  .profile-list{
+    list-style-type: none; /* Remove bullets/dots */
+  padding: 0; /* Remove default padding */
+  margin: 0;
+  }
+
+  .profile-card {
+    color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .user-full-name {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .user-email {
+    color: white;
+    font-style: italic;
+    color: #666;
+  }
+
+/* footer */
+footer{
+    background-color: #6ec010;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p, #copyright{
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+footer .footer-links{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+footer .footer-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+footer .footer-links a:hover{
+    color: #7ac07b;
+    background-color: #58585800;
+}

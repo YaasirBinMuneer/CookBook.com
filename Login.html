@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recipe Sharing Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- header section -->
+  <header>
+    <img class="logo" src="logo.png" alt="CookBook Logo">
+    <nav>
+        <ul>
+            <li><a href="/user-recipes.html">Recipes</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="Signup.html">Sign Up</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+    <div class="user-profile-container">
+        <img src="userprofile.png" alt="User Profile Picture" class="profile-picture">
+    </div>
+  </header>
+
+    <div class="formContent">
+        <div id="formBackground">
+            CookBook.com<br>
+            <form id="activeBackground" method="post" action="/Login">
+                Welcome back! <br>
+                <hr width="90%">
+                    <table>
+                        <tr>
+                            <td>Username:</td>
+                            <td><input type="text" name="acc_username" placeholder="Enter username" required><br></td>
+                        </tr>                         
+                        <tr>
+                            <td>Password:</td>
+                            <td><input type="password" name="acc_password" placeholder="Enter password" required></td>
+                        </tr>
+                    </table>
+                    <button type="submit" style="padding: 15px;"> Log in </button>
+                    <hr width="90%">
+            </form>
+            <form>
+                Don't Have an account?<br>What are you waiting for?<br>
+                <br><a id="button" href="Signup.html">Sign Up</a>
+            </form>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CookBook. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="user-recipes.html">Recipes</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

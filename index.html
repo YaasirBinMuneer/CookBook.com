@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recipe Sharing Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- header section -->
+  <header>
+    <img class="logo" src="logo.png" alt="CookBook Logo">
+    <nav>
+        <ul>
+            <li><a href="/user-recipes.html">Recipes</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Signup.html">Sign Up</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+    <div class="user-profile-container">
+        <img src="userprofile.png" alt="User Profile Picture" class="profile-picture">
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="big-title-container">
+        <h4 class="big-title">Welcome to CookBook </h4>
+      </div>
+    </section>
+
+    <section class="recipe-management">
+        <h2 class="add-recipe-heading">Latest recipes</h2>
+
+
+    <ul id="recipe-list" class="recipe-list">
+        <!-- Recipe cards will be dynamically added here -->
+    </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+        <p>&copy; 2024 CookBook. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="user-recipes.html">Recipes</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </div>
+</footer>
+
+   <script src="index.js"></script>
+   <script>
+     window.onload = function() {
+     getRecipes(); // Fetch recipes from server on page load
+   };
+   
+   </script>
+    
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recipe Sharing Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- header section -->
+  <header>
+    <img class="logo" src="logo.png" alt="CookBook Logo">
+    <nav>
+        <ul>
+            <li><a href="/user-recipes.html">Recipes</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="Signup.html">Sign Up</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+    <div class="user-profile-container">
+        <img src="userprofile.png" alt="User Profile Picture" class="profile-picture">
+    </div>
+  </header>
+
+  
+    <div class="formContent">
+        <div>
+            <table id="formBackground">
+                <tr>
+                    <td>
+                        <i>Account creation</i><br>
+                        Welcome to CookBook.com! <br>
+                        <form id="activeBackground" method="post" action="/Signup">
+                            Please enter registration details
+                            <hr width="90%">
+                            <div style="padding-left: 70px;">
+                                <div style="text-align: left; font-weight: lighter;">
+                                    <table>
+                                        <tr>
+                                            <td>First name:</td>
+                                            <td><input type="text" name="user_f_name" placeholder="Enter first name" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Last name:</td>
+                                            <td><input type="text" name="user_l_name" placeholder="Enter last name" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Email:</td>
+                                            <td><input type="email" name="user_email" placeholder="Enter email" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Username:</td>
+                                            <td><input type="text" name="acc_username" placeholder="Enter username" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Password:</td>
+                                            <td><input type="password" name="acc_password" placeholder="Enter password" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Confirm password:</td>
+                                            <td><input type="password" name="confirm_password" placeholder="Confirm password" required></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <hr width="90%">
+                            <button type="submit">Create account</button>
+                            <button type="reset">Reset details</button>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CookBook. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="user-recipes.html">Recipes</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

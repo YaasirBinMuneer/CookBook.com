@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recipe Sharing Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- header section -->
+  <header>
+    <img class="logo" src="logo.png" alt="CookBook Logo">
+    <nav>
+        <ul>
+            <li><a href="/user-recipes.html">Recipes</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="Signup.html">Sign Up</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+    <div class="user-profile-container">
+        <img src="userprofile.png" alt="User Profile Picture" class="profile-picture">
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="big-title-container">
+        <h1 class="big-title">What's your appetite in the mood for?</h1>
+      </div>
+      <div class="recipe-search">
+        <input type="text" id="search-input" placeholder="Search by name of the recipe....." class="search-input" oninput="recipeSearch()"><br><br>
+          <select name="edit-type" id="edit-cuisine" class="edit-cuisine" onchange="category_filterRecipes()" required>
+            <option>Search by cusine.....</option>
+            <option value="American">American</option>
+            <option value="British">British</option>
+            <option value="Chinese">Chinese</option>
+            <option value="French">French</option>
+            <option value="Greek">Greek</option>
+            <option value="Indian">Indian</option>
+            <option value="Italian">Italian</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Korean">Korean</option>
+            <option value="Mexican">Mexican</option>
+            <option value="Moroccan">Moroccan</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Thai">Thai</option>
+            <option value="Vietnamese">Vietnamese</option>
+            <option value="Brazilian">Brazilian</option>
+            <option value="Turkish">Turkish</option>
+            <option value="Russian">Russian</option>
+            <option value="German">German</option>
+            <option value="Swedish">Swedish</option>
+            <option value="Lebanese">Lebanese</option>
+          </select>
+      </div>
+    </section>
+
+    <section class="recipe-management">
+
+      <ul id="recipe-list" class="recipe-list">
+        <!-- Recipe cards will be dynamically added here -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+        <p>&copy; 2024 CookBook. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="user-recipes.html">Recipes</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </div>
+</footer>
+
+  <script src="user-recipe-script.js"></script>
+  <script>
+    window.onload = function() {
+    getRecipes(); // Fetch recipes from server on page load
+  };
+  
+  </script>
+</body>
+</html>

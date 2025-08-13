@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recipe Sharing Website</title>
+  <link rel="stylesheet" href="profile_styles.css">
+</head>
+<body>
+  <!-- header section -->
+  <header>
+    <img class="logo" src="logo.png" alt="CookBook Logo">
+    <nav>
+        <ul>
+            <li><a href="/myRecipes.html">My Recipes</a></li>
+            <li><a href="/user-dashboard.html">Search Recipes</a></li>
+            <li><a href="/logOut">Logout</a></li>
+            <li><a href="/profile.html">Profile</a></li>
+          </ul>
+    </nav>
+    <div class="user-profile-container">
+        <img src="profileicon.png" alt="User Profile Picture" class="profile-picture">
+    </div>
+    
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="big-title-container">
+        <h1 class="big-title">User details</h1>
+      </div>
+      <section class="profile-management">
+        <ul id="profile-details" class="profile-details">
+            <!--User details-->
+        </ul>
+      </section>
+    </section>
+  </main>
+
+
+  <script src="profile_script.js"></script>
+  <script>
+    window.onload = function() {
+    getProfile(); // Fetch recipes from server on page load
+  }; 
+  </script>
+</body>
+
+<footer>
+  <p>&copy; 2024 Recipe Sharing Website</p>
+</footer>
+</html>
